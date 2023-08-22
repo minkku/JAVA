@@ -18,7 +18,7 @@ public class test_05 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner i = new Scanner(System.in);
-		String msg = " ";
+		String msg = null;
 		
 		System.out.println("시험 점수를 입력해주세요 >> ");
 		int score = i.nextInt();
