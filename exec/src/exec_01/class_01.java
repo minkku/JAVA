@@ -14,9 +14,16 @@ public class class_01 {
 		int a = 2;
 		int b = 5;
 		int c = a + b ;
+		int num = a * b ;
+		int num2 = a / b ;
+		
+		int i = a * b;
+		int j = a / b;
 		
 		System.out.printf("%d와 %d의 합은 %d 입니다. %n", a,b,a+b);
 		System.out.printf("%d와 %d의 합은 %d 입니다. %n", a,b,c);
+		System.out.printf("%d와 %d의 곱합 값은 %d 입니다. %n", a,b,num);
+		System.out.printf("%d와 %d의 나눈 값은 %d 입니다. %n", a,b,num2);
 	}
 
 }
