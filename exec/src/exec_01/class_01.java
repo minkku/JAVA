@@ -26,18 +26,6 @@ public class class_01 {
 		System.out.printf("%d와 %d의 합은 %d 입니다. %n", a,b,c);
 		System.out.printf("%d와 %d의 곱합 값은 %d 입니다. %n", a,b,num);
 		System.out.printf("%d와 %d의 나눈 값은 %d 입니다. %n", a,b,num2);
-<<<<<<< HEAD
-=======
-*/		
-		Scanner scan = new Scanner(System.in);
-		
-		System.out.printf("입력할 숫자를 써주세용>");
-		String input = scan.nextLine();
-		int num = Integer.parseInt(input);
-		
-		System.out.println("입력내용:"+input);
-		System.out.printf("num=%d%n", num);
->>>>>>> scanner
 	}
 
 }
