@@ -8,12 +8,14 @@ public class test_06_1 {
 		// TODO Auto-generated method stub
 		//학점계산기
 	      Scanner scan = new Scanner(System.in);
+	      
 	      System.out.println("학점계산기");
 	      System.out.print("점수 :");
+	      
 	      int score = scan.nextInt();
 	      int a = score % 10;
-	      String msg = "";
 	      
+	      String msg = "";
 	      
 	      if (score>=90) {
 	    	  msg="A";
@@ -27,7 +29,7 @@ public class test_06_1 {
 	      }
 
 	      if (a>6&&score>=70 || score == 100) {
-	   msg = msg+"+";
+	    	  msg = msg+"+";
 	     }
 	      
 	      System.out.printf( " 님의 " + " 학점은 " + msg +" 입니다.");
