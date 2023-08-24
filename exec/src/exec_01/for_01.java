@@ -27,19 +27,25 @@ public class for_01 {
 		//			}
 		//		}
 
-//		int result = 0;
+		//		int result = 0;
 
-//		for (int z = 1; z <= 21; z++) {
-//			if(z%2 == 0) {
-//				result += z;
-//			}
-//		}
-//		System.out.print(result);
-		
-		
-		for (int l = 10; l >= 1; l--) {
-			System.out.print(l);
-		}
+		//		for (int z = 1; z <= 21; z++) {
+		//			if(z%2 == 0) {
+		//				result += z;
+		//			}
+		//		}
+		//		System.out.print(result);
+
+
+		//		for (int l = 10; l >= 1; l--) {
+		//		System.out.print(l);
+		//		}
+				
+				int result = 0;
+				for (int i = 1; i <= 9; i++) {
+					result = i * 2;
+				System.out.println("2 * " + i + " = " + result);
+				}
 	}
 
 }
