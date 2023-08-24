@@ -7,8 +7,6 @@ public class for_02 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		String msg = "";
-		
 		System.out.printf("구구 단 : ");
 		int a = sc.nextInt();
 		
