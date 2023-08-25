@@ -41,11 +41,19 @@ public class for_01 {
 		//		System.out.print(l);
 		//		}
 				
+//				int result = 0;
+//				for (int i = 1; i <= 9; i++) {
+//					result = i * 2;
+//				System.out.println("2 * " + i + " = " + result);
+//				}
+//	}
 				int result = 0;
-				for (int i = 1; i <= 9; i++) {
-					result = i * 2;
-				System.out.println("2 * " + i + " = " + result);
+				
+				for(int i = 1; i <= 53; i++) {
+
+					System.out.print(i + " ");
 				}
-	}
+				}
+
 
 }

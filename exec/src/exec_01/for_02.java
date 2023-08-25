@@ -15,6 +15,9 @@ public class for_02 {
 				if(a <= 9) {
 				result = i * a;
 				System.out.println(a + " * " + i + " = " + result);
+				} else {
+					System.out.println("9 이상의 값은 곱할 수 없습니다.");
+					break;
 				}
 			}
 	}
