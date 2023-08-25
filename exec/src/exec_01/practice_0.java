@@ -28,6 +28,7 @@ public class practice_0 {
 			 }
 			 	System.out.println(msg);
 			 	System.out.println(i);
+			 	System.out.println("Want to exit? enter 'exit'.");
 		}
 		msg = "bye";
 		System.out.println(msg);
