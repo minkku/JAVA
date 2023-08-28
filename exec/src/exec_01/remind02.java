@@ -3,6 +3,9 @@ package exec_01;
 public class remind02 {
 
 	public static void main(String[] args) {
+		
+		String a = "*";
+		
 		//task 1
 		class Space {
 			public void space() {
@@ -13,8 +16,6 @@ public class remind02 {
 
 		int i;
 		int j;
-
-		String a = "[]";
 
 		for(i = 111; i <= 113; i++) {
 			System.out.println(i);
@@ -37,6 +38,15 @@ public class remind02 {
 					System.out.printf("[%d,%d]", i, j);
 				}else {
 					System.out.print("     ");
+				}
+			}
+			System.out.println();
+		}
+		
+		for (i = 1; i <= 5; i++) {
+			for(j = 1; j <= 5; j++) {
+				if(i <= j) {
+					System.out.printf(a);
 				}
 			}
 			System.out.println();
