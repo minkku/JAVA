@@ -7,7 +7,7 @@ public class while1 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		Random rm = new Random(50);
+		Random rm = new Random();
 		
 		int randomNum = 0;
 		int guessNum = 0;
@@ -24,8 +24,10 @@ public class while1 {
 			
 			if(randomNum < guessNum) System.out.println("DOWN");
 			if(randomNum > guessNum) System.out.println("UP");
-			count ++;
-			
+			if(randomNum == guessNum) System.out.println("CORRECT");
+			else {
+				count ++;				
+			}
 		} while(randomNum != guessNum); 
 		{
 			System.out.printf("오답횟수 : %d ",count);
