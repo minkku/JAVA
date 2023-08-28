@@ -32,5 +32,6 @@ public class while1 {
 		{
 			System.out.printf("오답횟수 : %d ",count);
 		}
+		sc.close();
 	}
 }
