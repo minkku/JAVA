@@ -4,23 +4,29 @@ public class class_task {
 
 	public static void main(String[] args) {
 		Hobbang a = new Hobbang();
-		
-		a.type = "호빵";
+		a.type = "팥";
 		a.price = 600;
+		System.out.println(a.hoho());
 		
-		a.hoho();
+		Hobbang b = new Hobbang();
+		b.type = "야채";
+		b.price = 700;
+		System.out.println(b.hoho());
+		
+		Hobbang c = new Hobbang();
+		c.type = "피자";
+		c.price = 900;
+		System.out.println(c.hoho());
 	}
 }
 
 	class Hobbang {
 		
 		// field
-		String type;
+		static String type;
 		int price;
 		
-		void hoho() {
-			System.out.println("팥 " + type + price + "won");
-			System.out.println("야채 " + type + price + "won");
-			System.out.println("피자 " + type + price + "won");
+		String hoho() {
+			return String.format("%s 호빵: %d원", type, price);
 		}
 	}
