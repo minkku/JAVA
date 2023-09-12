@@ -3,7 +3,15 @@ package exec_01;
 public class class_practice {
 
 	public static void main(String[] args) {
-		Hero result = new Hero();
+		Hero h1 = new Hero();
+		
+		// 객체 값 초기화
+		h1.name = "이즈리얼";
+		h1.helth = 100;
+		h1.dmg = 350;
+		
+		// 객체에게 메소드 수행
+		h1.punch();
 	}
 }
 
@@ -15,6 +23,8 @@ public class class_practice {
 		
 		//method
 		void punch() {
+			 System.out.println(name + "의 펀치!");
+			 System.out.println(dmg + "dmg");
 		}
 	}
 
