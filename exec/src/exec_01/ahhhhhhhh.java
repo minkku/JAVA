@@ -23,6 +23,7 @@ class Clock {
 	public int getMinute() { return minute; }
 	public float getSecond() { return second; }
 	
+	// 실시간 시간을 구할때 불필요한 코드들
 	public void setHour (int h) {
 		if (h < 0 || h > 23) 
 			return;
@@ -42,6 +43,13 @@ class Clock {
 	public void getTime() {
 		System.out.println("지금은 " + hour + "시 " + minute + "분 " + second + "초 입네다." );
 	}
+}
+
+class Card {
+	String kind;
+	int num;
+	static int width = 100;
+	static int height = 250;
 }
 
 public class ahhhhhhhh {	
@@ -102,7 +110,22 @@ public class ahhhhhhhh {
 			System.out.println("===== example 4 =====");
 			Clock now = new Clock();
 			now.getTime();
+			System.out.println();
 			
-
+			System.out.println("===== example 5 =====");
+			Card c1 = new Card();
+			c1.kind = "Heart";
+			c1.num = 7;
+			
+			Card c2 = new Card();
+			c2.kind = "Spade";
+			c2.num = 10;
+			
+			System.out.println("C1은 " + c1.kind + ", " + c1.num + "이며, 크기는" + c1.width + ", " + c1.height);
+			System.out.println("C2은 " + c2.kind + ", " + c2.num + "이며, 크기는" + c2.width + ", " + c2.height);
+			System.out.println();
+			
+			System.out.println("===== example 6 =====");
+			
 	}	// main의 끝
 }
