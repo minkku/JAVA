@@ -1,5 +1,7 @@
 package exec_01;
 
+import java.time.*;
+
 class Tv {
 	String color;
 	boolean power;
@@ -9,6 +11,37 @@ class Tv {
 	void power() { power = !power; }	// TV를 켜거나 끄는 기능
 	void channelUp() { ++ch; }			// TV의 채널을 높이는 기능
 	void channelDown() { --ch; }		// TV의 채널을 낮추는 기능
+}
+
+class Clock {
+	LocalTime n = LocalTime.now();		// 실시간 시간을 사용하기 위해서는 요거 쓰면 됌
+	private int hour = n.getHour();
+	private int minute = n.getMinute();
+	private float second = n.getSecond();
+	
+	public int getHour() { return hour; }
+	public int getMinute() { return minute; }
+	public float getSecond() { return second; }
+	
+	public void setHour (int h) {
+		if (h < 0 || h > 23) 
+			return;
+		hour = h;
+	}
+	public void setMinute (int m) {
+		if (m < 0 || m > 59)
+			return;
+		minute = m;
+	}
+	public void setSecond (float s) {
+		if (s < 0.0f || s > 59.99f)
+			return;
+		second = s;
+	}
+	
+	public void getTime() {
+		System.out.println("지금은 " + hour + "시 " + minute + "분 " + second + "초 입네다." );
+	}
 }
 
 public class ahhhhhhhh {	
@@ -64,5 +97,12 @@ public class ahhhhhhhh {
 				tvArr[i].channelUp();
 				System.out.printf("tvArr[%d].ch=%d%n",i,tvArr[i].ch);
 			}
+			System.out.println();
+			
+			System.out.println("===== example 4 =====");
+			Clock now = new Clock();
+			now.getTime();
+			
+
 	}	// main의 끝
 }
